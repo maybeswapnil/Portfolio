@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import "react-slideshow-image/dist/styles.css";
+@import 'react-slideshow-image/dist/styles.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,13 +10,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #AEC5B3;
+  background-color: #CBC1BE;
   scrollbar-color: #AEC5B3 yellow;
-
+  
 }
 
 .scr-elem {
   scrollbar-color: #AEC5B3 yellow;
+}
+div {
+  transition-delay: 1s;
 }
 
 a{
@@ -24,7 +30,7 @@ a{
 .App {
   background-image: url("mainPageImage.jpg");
   margin-top: 0px;
-  height: 750px;
+  height: 803px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -36,10 +42,17 @@ a{
   font-weight: bolder;
 }
 
-.nav-link:hover {
+.nav-link1:hover {
   background-color: white;
   color: black;
   font-weight: bolder;
+}
+
+.rightNav {
+  padding: 0;
+}
+#git:hover {
+  font-size: 19px; 
 }
 
 ul {
@@ -55,6 +68,20 @@ ul {
   order: 7;
 }
 
+ul.rightNav {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 17px;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top:25px;
+  padding: 0px;
+}
+
 nav {
   color: white;
   position: fixed;
@@ -67,8 +94,11 @@ nav {
 }
 
 .classTitle {
+  padding-top: 50px;
+  padding-right: 700px;
   margin-top: 0px;
-  padding-right: 750px;
+  margin-left: auto;
+  margin-right: auto;
   color:rgb(255, 255, 255);
 }
 
@@ -90,39 +120,99 @@ nav {
   margin-top: 0;
 }
 
+div.description {
+  height: 10em;
+  position: relative; 
+  padding-top: 90px;
+}
+div.description p {
+  margin: 0;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 #description {
-  padding-left: 550px;
-  padding-top: 220px;
-  width: 860px;
-  font-family: 'Nunito', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+#footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content:center;
+  width: fullx;
+  background-color: #555;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 16px;
+  height: 30px;
 }
 
-p {
+#mainDes {
   text-align: center;
+  color: white;
+  font-size: 23px;
+  
 }
 
+#mainDes2 {
+  color: white;
+  font-size: 28px;
+  padding-top: auto;
+  width: 700px;
+}
 span {
   color: black;
 }
 
 #small {
-  margin-right: 170px;
+  padding-top: 10px;
+  padding-left: 250px;
   font-size: 19px;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
-.scr-elem::-webkit-scrollbar {
-  display: none;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.scr-elem {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+ /* width */
+::-webkit-scrollbar {
+width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+} 
+
+#logo {
+  width: 60px;
+}
+
+#logo2 {
+  width: 25px;
+}
+
+#logo3 {
+  width: 27px;
+}
