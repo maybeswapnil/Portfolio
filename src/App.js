@@ -81,12 +81,14 @@ class App extends React.Component {
           <Pexel />
           <br />
           <br />
-          <br />
+          <p id="mainDes" className="work" style={{fontSize:"50px", paddingRight:"800px"}}>Other <span>Projects</span></p>
           <br />
           <br />
           <Slideshow />
           <br />
           <br />
+          <p id="mainDes" className="work dork">I'm a stock photographer, freelance webdesigner, I can design cars, build and pilot fpv drones. I work as a <span id="work">Performance Tester.</span> Below are the <span>projects</span> I made and the <span>services</span> I provide</p>
+
           <div id="footer">
             <footer>© 2021 COPYRIGHT hellochemo | Find me on the links provided. | Peace out.</footer>
           </div>

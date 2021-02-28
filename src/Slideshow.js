@@ -18,7 +18,7 @@ function open() {
 
 const Slideshow = () => {
     return (
-      <div className="slideshowmain">
+      <div className="slideshowmain second">
           <div className="container">
               <img src={img1} alt="Avatar" class="image" />
               <div className="overlay">
