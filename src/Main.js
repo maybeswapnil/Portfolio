@@ -1,44 +1,22 @@
 import './App.css';
 import React from 'react';
-import Main from './Main';
-import Login from './Contact';
-import './App.css';
-
 import logo from './../src/git.png';
 import logo2 from './../src/linkLogo.png';
 import Slideshow from './Slideshow';
 import Pexel from './pexel';
 
 
-
-
-class App extends React.Component {
+class Main extends React.Component {
 
   constructor() {
       super();
 
       this.state = {
-        view: 2
+        slideIndex: true
       };
+    }
 
-      this.changeViewContact = this.changeViewContact.bind();
-      this.changeViewHome = this.changeViewHome.bind();
-
-  }
-
-  changeViewContact = () => {
-    this.setState(state => ({
-       view: 2
-    }));
-  }
-
-  changeViewHome() {
-    this.setState(state => ({
-       view: 1
-    }));
-  }
   render() {
-    if(this.state.view==1) {
       return (
         <div className="App">
           <div className="classNavbar">
@@ -47,7 +25,7 @@ class App extends React.Component {
                   <li><a className="nav-link nav-link1" href="#home">HOME</a></li>
                   <li><a className="nav-link nav-link1" href="#description">ABOUT</a></li>
                   <li><a className="nav-link nav-link1" href="#work">WORK</a></li>
-                  <li><a className="nav-link nav-link1" href="#work" onClick={this.changeViewContact}>CONTACT</a></li>
+                  <li><a className="nav-link nav-link1" href="#abstract">CONTACT</a></li>
                 </ul>
                 <ul className="rightNav">
                   <li><a className="nav-link nav-link2" id="git" href = "https://github.com/chemotharepy"><img id="logo" src={logo} alt="logo" /></a></li>
@@ -96,14 +74,7 @@ class App extends React.Component {
           </div>
         </div>
       );
-    } else if(this.state.view==2) {
-      return (
-        <Login name="swapnil sharma"/>
-        );
     }
-
-  }
-
 }
 
-export default App;
+export default Main;
