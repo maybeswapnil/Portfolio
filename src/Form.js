@@ -3,7 +3,7 @@ import React from 'react';
 import config from './config';
 
 
-firebase.initializeApp(config);
+
 
 class Form extends React.Component {
         render() {
