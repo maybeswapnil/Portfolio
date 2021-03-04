@@ -158,3 +158,28 @@
   width: 1000px;
 }
 
+.top {height: 500px}
+
+.textBox {
+  width: 300px;
+  margin-right: 90px;
+}
+
+input[type=email] {
+  border: 1px solid #555;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  background-color: #555;
+  color: white;
+  font-size: 32px;
+  padding-left: 20px;
+}
+input[type=submit] {
+  border: 2px solid #555;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+  color: white;
+  background-color: #555;
+  
+}
+

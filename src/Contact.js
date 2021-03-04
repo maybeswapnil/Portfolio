@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Main from './Main';
-import Contact from './Contact';
+import Form from './Form';
 
 const colors = ['#16a085',
                 '#27ae60',
@@ -80,7 +80,10 @@ class Login extends React.Component {
    
       return (
         <div className="login">
+          <div className="top">
             <p  style={{fontSize:"90px"}}>{this.state.mock}</p>
+          </div>
+          <Form />
         </div>
     );
     

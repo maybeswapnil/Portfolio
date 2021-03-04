@@ -18,7 +18,7 @@ class App extends React.Component {
       super();
 
       this.state = {
-        view: 2
+        view: 1
       };
 
       this.changeViewContact = this.changeViewContact.bind();
