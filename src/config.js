@@ -1,3 +1,4 @@
+import firebase from 'firebase';
 var config = {
     apiKey: "AIzaSyAiEk_V2MslUvNsQFf1dE9gZLq3W46Sf3s",
     authDomain: "hellochemo.firebaseapp.com",
@@ -8,5 +9,7 @@ var config = {
     measurementId: "G-RE0QYDZH8D"
   };
 
+var fire = firebase.initializeApp(config);
+
   
-export default config;
+export default fire;

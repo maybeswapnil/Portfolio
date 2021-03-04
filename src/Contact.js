@@ -32,7 +32,6 @@ class Login extends React.Component {
       this.reload = this.reload.bind(this);
   }
   reload() {
-    console.log(colors[Math.floor(Math.random()*10)]);
     var c = Math.floor(Math.random()*10);
     this.setState(state => ({
         color: colors[c]
@@ -41,7 +40,6 @@ class Login extends React.Component {
 
   tick() {
     var rand = this.random();
-    console.log(rand);
     this.reload();
     this.setState(state => ({
       mock: this.state.value + rand
