@@ -24,7 +24,7 @@ class Login extends React.Component {
       this.state = {
         value: "",
          count: 0,
-         final: "hello " + props.name + " how are you, i hope you are doing ok",
+         final: "hello, please provide the review",
          mock: ""
       };
       this.handleChange = this.handleChange.bind(this);
@@ -59,18 +59,18 @@ class Login extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.tick(), 5);
+    this.interval = setInterval(() => this.tick(), 0.1);
   }
 
 
   handleChange() {
-    if(this.state.count===(this.state.final).lenght-10) {
+    if(this.state.count===31) {
       clearInterval(this.interval);
     }
   }
 
   random() {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz, ";
+    const alphabet = "abcdefhilmnopqrvstuw, ";
     return alphabet[Math.floor(Math.random() * alphabet.length)];
   }
 
@@ -81,7 +81,7 @@ class Login extends React.Component {
           <div className="top">
             <p  style={{fontSize:"90px"}}>{this.state.mock}</p>
           </div>
-          <Form />
+          <Form name={this.state.name}/>
         </div>
     );
     

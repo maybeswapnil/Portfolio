@@ -1,9 +1,6 @@
 import React from 'react';
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import img1 from './../src/pexel_2.jpg';
-import img2 from './../src/slide_2.png';
-import img3 from './../src/slide_3.JPG';
 
 const Pexel = () => {
     return (

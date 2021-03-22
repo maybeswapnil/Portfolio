@@ -246,3 +246,15 @@ img {
   padding-left: 90px;
   padding-right: 90px;
 } 
+
+#mid {
+  margin-left: auto;
+  margin-right: 62.5%;
+  padding-bottom: 40px;
+}
+
+#text-box {
+  background-color: white;
+  color: black;
+  border-color: white;
+}

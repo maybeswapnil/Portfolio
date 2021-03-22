@@ -1,7 +1,5 @@
 import './App.css';
 import React from 'react';
-import Main from './Main';
-import Login from './Contact';
 import './App.css';
 
 import logo from './../src/git.png';
@@ -11,25 +9,23 @@ import Pexel from './pexel';
 
 
 
-
 class App extends React.Component {
 
-  constructor() {
-      super();
+  constructor(props) {
+      super(props);
 
       this.state = {
-        view: 1
+        view: 1,
+        name: ""
       };
-
-      this.changeViewContact = this.changeViewContact.bind();
       this.changeViewHome = this.changeViewHome.bind();
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
 
   }
 
-  changeViewContact = () => {
-    this.setState(state => ({
-       view: 2
-    }));
+  changeViewContact = (props) => {
+    props.history.push("/contact");
   }
 
   changeViewHome() {
@@ -37,8 +33,22 @@ class App extends React.Component {
        view: 1
     }));
   }
+
+  handleChange = e => {
+    this.setState({
+        name: e.target.value
+    });
+  }
+
+  handleSubmit() {
+    console.log(this.state.name);
+    this.setState(state => ({
+      view: 2
+  }));
+  }
+
+  
   render() {
-    if(this.state.view==1) {
       return (
         <div className="App">
           <div className="classNavbar">
@@ -89,19 +99,14 @@ class App extends React.Component {
           <Slideshow />
           <br />
           <br />
-          <p id="mainDes" className="work dork">I'm a stock photographer, freelance webdesigner, I can design cars, build and pilot fpv drones. I work as a <span id="work">Performance Tester.</span> Below are the <span>projects</span> I made and the <span>services</span> I provide</p>
-
+          <p id="mainDes">Thanks you for going through the page.</p>
+            <p id="mainDes" className="work">It's a work in progress so check back often!</p>
+          <br />
           <div id="footer">
             <footer>© 2021 COPYRIGHT hellochemo | Find me on the links provided. | Peace out.</footer>
           </div>
         </div>
       );
-    } else if(this.state.view==2) {
-      return (
-        <Login name="swapnil sharma"/>
-        );
-    }
-
   }
 
 }
