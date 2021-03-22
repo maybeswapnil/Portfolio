@@ -35,10 +35,7 @@
       "not dead",
       "not op_mini all"
     ],
-    "peerDependencies": {
-      "react": ">=16.8.0",
-      "react-dom": ">=16.8.0"
-    },
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
