@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
 import App from './App';
-import Footer from './Footer';
-
 import Contact from './Contact';
 import Employee from './Employee';
+import Typetest from './Typetest';
+
 import logo from './../src/git.png';
 import logo2 from './../src/linkLogo.png';
 
@@ -21,9 +21,7 @@ import {
   
   
   export default function RouteFunction() {
-   
-    
-    
+  
     return (
       <Router>
         <div>
@@ -34,9 +32,11 @@ import {
                       <li><a className="nav-link nav-link1" href="#home">HOME</a></li>
                   </Link>
                   <li><a className="nav-link nav-link1" href="#description">ABOUT</a></li>
-                  <li><a className="nav-link nav-link1" href="#work">WORK</a></li>
+                  <Link to='/typetest'>
+                      <li><a className="nav-link nav-link1">TYPETEST</a></li>
+                  </Link>
                   <Link to='/contact'>
-                      <li><a className="nav-link nav-link1"  href="#123" >CONTACT</a></li>
+                      <li><a className="nav-link nav-link1">CONTACT</a></li>
                   </Link>
                 </ul>
                 <ul className="rightNav">
@@ -46,9 +46,12 @@ import {
             </nav>
           </div>
           <Switch>
-          <Route path="/employee">
+            <Route path="/employee">
               <Employee />
             </Route>
+            <Route path="/typetest" >
+              <Typetest />
+            </Route> 
             <Route path="/contact" >
               <Contact />
             </Route> 
