@@ -204,3 +204,7 @@ input[type=submit] {
   margin-left: 130px;
   margin-right: 0px;
 }
+
+.dark {
+  background-color: #4D6742;
+}

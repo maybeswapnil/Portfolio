@@ -54,7 +54,7 @@ class Form extends React.Component {
                                 <input type="text" id="boc" classNmme="extra" size="40" height="900" onChange={this.handleChangeMessage} placeholder="Message" />
                                 <br />
                                 <br />
-                                <input type="submit" onClick="submit" onClick={this.handleSubmit} size="10" value="Register"/>
+                                <input type="submit" onClick="submit" onClick={this.handleSubmit} size="10" value="Send"/>
                             </form>
                         </div>
             );
@@ -62,7 +62,7 @@ class Form extends React.Component {
                 return(
                     <div className="login">
                     <div className="top">
-                      <p  style={{fontSize:"50px"}}>Thanks for Registering</p>
+                      <p  style={{fontSize:"50px"}}>Thanks for your feedback. Visit again!</p>
                     </div>
                   </div>    
                   );

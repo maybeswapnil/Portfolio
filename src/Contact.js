@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import Main from './Main';
 import Form from './Form';
+import { withRouter } from 'react-router-dom';
+
 
 const colors = ['#16a085',
                 '#27ae60',
@@ -90,4 +92,4 @@ class Login extends React.Component {
 
 }
 
-export default Login;
+export default withRouter(Login);

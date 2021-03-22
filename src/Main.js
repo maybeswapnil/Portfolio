@@ -3,7 +3,7 @@ import React from 'react';
 import logo from './../src/git.png';
 import logo2 from './../src/linkLogo.png';
 import Slideshow from './Slideshow';
-import Pexel from './pexel';
+import Pexel from './Pexel';
 
 
 class Main extends React.Component {

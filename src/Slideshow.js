@@ -14,7 +14,7 @@ function open() {
 
 const Slideshow = () => {
     return (
-      <div className="slideshowmain blackback">
+      <div className="slideshowmain blackback dark">
             <div className="pexeldes toleft">
                 <p id="mainDes2" className="des">Projects by <span>Swapnil Sharma</span> are available on <span>Codepen and Github</span></p>
             </div>
@@ -25,6 +25,8 @@ const Slideshow = () => {
             <div className="text2"><a className="text2" href="https://github.com/explore">Github</a></div>
             </div>
             </div>
+            <br />
+            
         </div>      
     )
 }

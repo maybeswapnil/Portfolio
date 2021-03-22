@@ -13,6 +13,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-slideshow-image": "^3.4.3",
+    "scrollmagic": "^2.0.8",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -33,6 +34,10 @@
       "not dead",
       "not op_mini all"
     ],
+    "peerDependencies": {
+      "react": ">=16.8.0",
+      "react-dom": ">=16.8.0"
+    },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

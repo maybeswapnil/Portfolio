@@ -2,10 +2,8 @@ import './App.css';
 import React from 'react';
 import './App.css';
 
-import logo from './../src/git.png';
-import logo2 from './../src/linkLogo.png';
 import Slideshow from './Slideshow';
-import Pexel from './pexel';
+import Pexel from './Pexel';
 
 
 
@@ -51,23 +49,9 @@ class App extends React.Component {
   render() {
       return (
         <div className="App">
-          <div className="classNavbar">
-            <nav id="nav-bar">
-                <ul>
-                  <li><a className="nav-link nav-link1" href="#home">HOME</a></li>
-                  <li><a className="nav-link nav-link1" href="#description">ABOUT</a></li>
-                  <li><a className="nav-link nav-link1" href="#work">WORK</a></li>
-                  <li><a className="nav-link nav-link1" href="#work" onClick={this.changeViewContact}>CONTACT</a></li>
-                </ul>
-                <ul className="rightNav">
-                  <li><a className="nav-link nav-link2" id="git" href = "https://github.com/chemotharepy"><img id="logo" src={logo} alt="logo" /></a></li>
-                  <li><a className="nav-link nav-link2" id="git" href = "https://www.linkedin.com/in/swapnil5harma/"><img id="logo2" src={logo2} alt="logo" /></a></li>
-                </ul>
-            </nav>
-          </div>
           <div className="classTitle" id="home">
-            <h1 id="title">Called</h1>
-            <h2 id="title">blend</h2>
+            <h1 id="title">hello!..</h1>
+            <h2 id="title">chemo</h2>
           </div>
 
           <div id="description">
