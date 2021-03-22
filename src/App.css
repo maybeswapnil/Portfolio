@@ -231,16 +231,21 @@ input[type=submit] {
   height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
+  overflow: hidden; 
+
 }
 #maintest {
   font-family: 'Noto Sans', sans-serif;
   padding-top: 200px;  
   padding-left: 140px;
+  overflow: hidden; 
+
 }
 .middle {
   margin-left: 30px;
   white-space: pre;
   color: #555;
+  padding-left: 70px;
 }
 
 #header {
@@ -249,13 +254,15 @@ input[type=submit] {
 }
 
 .bocClass {
-  text-align: center;
+  
   background-color: #555;
   color: white;
   font-family: 'Nunito', sans-serif;
   border: 2px solid #555;
   font-size: 19px;
   width: 200px;
+  padding-left: 10px;
+  padding-right: 190px;
 }
 
 #foot {
@@ -263,4 +270,17 @@ input[type=submit] {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#tbb {
+  padding-left: 70px;
+}
+
+.login {
+  height: 100%;
+  overflow: hidden; 
+  background-image: url("dino.png");
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
 }

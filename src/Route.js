@@ -4,7 +4,6 @@ import App from './App';
 import Contact from './Contact';
 import Employee from './Employee';
 import Typetest from './Typetest';
-
 import logo from './../src/git.png';
 import logo2 from './../src/linkLogo.png';
 
@@ -31,7 +30,9 @@ import {
                   <Link to='/'>
                       <li><a className="nav-link nav-link1" href="#home">HOME</a></li>
                   </Link>
-                  <li><a className="nav-link nav-link1" href="#description">ABOUT</a></li>
+                  <Link to='/'>
+                      <li><a className="nav-link nav-link1" href="#description">ABOUT</a></li>
+                  </Link>
                   <Link to='/typetest'>
                       <li><a className="nav-link nav-link1">TYPETEST</a></li>
                   </Link>

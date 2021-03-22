@@ -26,7 +26,7 @@ class Login extends React.Component {
       this.state = {
         value: "",
          count: 0,
-         final: "hello, please provide the review",
+         final: "please provide the review",
          mock: ""
       };
       this.handleChange = this.handleChange.bind(this);
@@ -66,7 +66,7 @@ class Login extends React.Component {
 
 
   handleChange() {
-    if(this.state.count===31) {
+    if(this.state.count===24) {
       clearInterval(this.interval);
     }
   }
