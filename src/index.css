@@ -125,18 +125,13 @@ nav {
   margin-top: 0;
 }
 
-div.description {
-  height: 10em;
-  position: relative; 
-  padding-top: 90px;
-}
 div.description p {
   margin: 0;
   background: yellow;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+ 
 }
 
 #description {
@@ -163,8 +158,7 @@ div.description p {
 #mainDes {
   text-align: center;
   color: white;
-  font-size: 23px;
-  
+  font-size: 1.4vw;
 }
 
 #mainDes2 {
