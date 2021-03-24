@@ -31,12 +31,9 @@ a{
   background-image: url("mainPageImage.jpg");
   margin-top: 0px;
   height: 803px;
-  background-repeat: no-repeat;
+  
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
 .nav-link {
@@ -107,7 +104,6 @@ nav {
   margin-right: auto;
   color:rgb(255, 255, 255);
 }
-
 .classTitle h1 {
   position: absolute;
   padding-top: 190px;
@@ -120,13 +116,11 @@ nav {
 }
 .classTitle h2 {
   position: absolute;
-
   font-family: 'Sedgwick Ave Display', cursive;
   font-weight: lighter;
   font-size: 6vw;
   text-align: center;
 }
-
 
 #description {
   padding-top: 770px;
@@ -146,7 +140,7 @@ nav {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1vw;
   height: 30px;
 }
 

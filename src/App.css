@@ -245,7 +245,7 @@ input[type=submit] {
   margin-left: 30px;
   white-space: pre;
   color: #555;
-  padding-left: 70px;
+  padding-left: 0px;
 }
 
 #header {
@@ -272,15 +272,99 @@ input[type=submit] {
   right: 0;
 }
 
-#tbb {
-  padding-left: 70px;
-}
+
 
 .login {
-  height: 100%;
   overflow: hidden; 
   background-image: url("dino.png");
   height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1080px) {
+  #footer {
+    font-size: 2vw;
+  }
+
+  .slideshowmain {
+    display: none;
+  }
+
+  #mainDes {
+    font-size: 5vw;
+    text-align: left;
+  }
+
+  .classTitle h1 {
+    font-size: 28vw;
+  }
+  .classTitle h2 {
+    font-size: 25vw;
+  }
+
+  
+
+  .rightNav {
+      display: none;
+  }
+  .nav-link {
+    padding: 10px;
+    order: 7;
+    font-weight: bolder;
+    font-weight: bolder;
+  }
+
+  #boc {
+    width: 100;
+  }
+
+  #tbb {
+    padding-left: 20px;
+  }
+  
+  .login {
+    overflow: hidden; 
+    background-image: none;
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    
+  }
+  .bocClass {
+  
+    background-color: #555;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid #555;
+    font-size: 19px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .textBox {
+    width: 100px;
+    margin-right: 10px;
+  }
+  .nav-link2 {
+    display: none;
+  }
+
+  .App {
+    background-image: url("mainPageImageMobile.jpg");
+    
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+  }
+
+  #mot {
+    display: none;
+  }
+
+  .dod {
+    display: none;
+  }
 }
