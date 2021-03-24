@@ -19,7 +19,6 @@ class App extends React.Component {
       this.changeViewHome = this.changeViewHome.bind();
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
-
   }
 
   changeViewContact = (props) => {
@@ -48,12 +47,16 @@ class App extends React.Component {
   
   render() {
       return (
-        <div className="App">
+        <div className="App"><br />
+        <br />
+        <br />
           <div className="classTitle" id="home">
-            <h1 id="title">hello!..</h1>
-            <h2 id="title">chemo</h2>
+            <h1 id="title">chemo</h1>
+            <h2 id="title">Hello!...</h2>
+            <br />
+            <br />
+            <br />
           </div>
-
           <div id="description">
             <p id="mainDes">Hi, my name is <span id="span">Swapnil.</span> I'm a <span>Front-End</span> Developer.</p>
             <p id="mainDes" className="work">I'm a stock photographer, freelance webdesigner, I can design cars, build and pilot fpv drones. I work as a <span id="work">Performance Tester.</span> Below are the <span>projects</span> I made and the <span>services</span> I provide</p>

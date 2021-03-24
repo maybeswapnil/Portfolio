@@ -284,9 +284,3 @@ input[type=submit] {
   background-position: right;
   background-repeat: no-repeat;
 }
-
-@media only screen and (max-width: 1080px) {
-  .rightNav {
-    display: none;
-  }
-}
