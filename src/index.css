@@ -33,6 +33,10 @@ a{
   height: 803px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .nav-link {
@@ -95,7 +99,8 @@ nav {
 
 .classTitle {
   padding-top: 50px;
-  padding-right: 700px;
+  padding-right: 40%;
+  padding-left: 10%;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +111,7 @@ nav {
   padding-top: 190px;
   font-family: 'Sedgwick Ave Display', cursive;
   font-weight: bold;
-  font-size: 190px;
+  font-size: 11vw;
   text-align: center;
   margin: 0;
   padding-right: 130px;
@@ -114,7 +119,7 @@ nav {
 .classTitle h2 {
   font-family: 'Sedgwick Ave Display', cursive;
   font-weight: lighter;
-  font-size: 105px;
+  font-size: 6vw;
   line-height: 0px;
   text-align: center;
   margin-top: 0;
@@ -131,14 +136,13 @@ div.description p {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
 #description {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 70vw;
 }
 
 #footer {
