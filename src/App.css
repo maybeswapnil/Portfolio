@@ -160,7 +160,7 @@
   width: 1000px;
 }
 
-.top {height: 500px}
+.top {height: 460px}
 
 .textBox {
   width: 300px;
@@ -274,6 +274,7 @@ input[type=submit] {
   overflow: hidden; 
   background-image: url("dino.png");
   height: 100vh;
+  
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -315,16 +316,18 @@ input[type=submit] {
     width: 100;
   }
 
- 
-  
   .login {
     overflow: hidden; 
     background-image: none;
-    height: 100vh;
-    background-position: right;
-    background-repeat: no-repeat;
     
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    right: 60px;
+    height: 100%;
+    bottom: 100px;
+  
   }
+
   .bocClass {
     background-color: #555;
     color: white;
@@ -337,7 +340,6 @@ input[type=submit] {
   }
   .textBox {
     width: 100px;
-    margin-right: 10px;
   }
   .nav-link2 {
     display: none;
@@ -381,7 +383,7 @@ input[type=submit] {
     margin-right: auto;
     font-size: 2vw;
     padding-left: 3vw;
-    } 
+  } 
 
   #tbb {
     padding-left: 3vw;

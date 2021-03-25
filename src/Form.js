@@ -61,9 +61,9 @@ class Form extends React.Component {
             } else {
                 return(
                     <div className="login">
-                    <div className="top">
-                      <p  style={{fontSize:"50px"}}>Thanks for your feedback. Visit again!</p>
-                    </div>
+                    
+                      <p  style={{fontSize:"50px"}}>Visit again!</p>
+                    
                   </div>    
                   );
             }
