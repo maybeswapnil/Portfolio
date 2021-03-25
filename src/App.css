@@ -185,16 +185,13 @@ input[type=submit] {
   font-size: 15px;
 }
 
-#boc {
-  
+#boc { 
   padding-left: 10px;
-  padding-right: 300px;
   background-color: #555;
   color: white;
   font-family: 'Nunito', sans-serif;
   border: 2px solid #555;
   font-size: 19px;
-
 }
 
 .extra {
@@ -232,16 +229,14 @@ input[type=submit] {
   background-position: right;
   background-repeat: no-repeat;
   overflow: hidden; 
-
 }
 #maintest {
   font-family: 'Noto Sans', sans-serif;
   padding-top: 200px;  
-  padding-left: 140px;
+  padding-left: 12vw;
   overflow: hidden; 
-
 }
-.middle {
+.middle5 {
   margin-left: 30px;
   white-space: pre;
   color: #555;
@@ -253,8 +248,12 @@ input[type=submit] {
   color: #F088B0;
 }
 
+#header2 {
+  font-size: 72px;
+  color: #F088B0;
+}
+
 .bocClass {
-  
   background-color: #555;
   color: white;
   font-family: 'Nunito', sans-serif;
@@ -266,13 +265,10 @@ input[type=submit] {
 }
 
 #foot {
-  
   position: absolute;
   bottom: 0;
   right: 0;
 }
-
-
 
 .login {
   overflow: hidden; 
@@ -283,6 +279,8 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 1080px) {
+  
+
   #footer {
     font-size: 2vw;
   }
@@ -297,13 +295,11 @@ input[type=submit] {
   }
 
   .classTitle h1 {
-    font-size: 28vw;
+    font-size: 24vw;
   }
   .classTitle h2 {
-    font-size: 25vw;
+    font-size: 23vw;
   }
-
-  
 
   .rightNav {
       display: none;
@@ -319,9 +315,7 @@ input[type=submit] {
     width: 100;
   }
 
-  #tbb {
-    padding-left: 20px;
-  }
+ 
   
   .login {
     overflow: hidden; 
@@ -332,7 +326,6 @@ input[type=submit] {
     
   }
   .bocClass {
-  
     background-color: #555;
     color: white;
     font-family: 'Nunito', sans-serif;
@@ -352,12 +345,10 @@ input[type=submit] {
 
   .App {
     background-image: url("mainPageImageMobile.jpg");
-    
     max-width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
   }
 
   #mot {
@@ -367,4 +358,51 @@ input[type=submit] {
   .dod {
     display: none;
   }
+
+  #header {
+    color: white;
+    font-size: 30.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #maintest {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    padding-top: 200px;  
+    padding-left: 6vw;
+    overflow: hidden; 
+  }
+  .middle5 {
+    white-space: pre;
+    color: #555;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2vw;
+    padding-left: 3vw;
+    } 
+
+  #tbb {
+    padding-left: 3vw;
+    padding-top: 4vw;
+    width: 100px;
+  }
+
+  #header2 {
+    color: white;
+    padding-left: 50vw;
+  }
+
+  input[type="text"] {
+    width: 57vw;
+    font-size: 15px;
+}
+#type {
+  background-image: url("backart.png");
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+}
 }

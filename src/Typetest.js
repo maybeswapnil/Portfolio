@@ -8,13 +8,13 @@ const sentences = [
     'Can we go to the park',
     'Where is the orange cat?',
     'We can make the bird fly away',
-    'We can go down to the store with the dog.',
-    'My big yellow cat ate the black bird',
+    'We can go down to the store',
+    'My big yellow cat ate the bird',
     'I like to read my book at school',
     'We are going to swim at the park',
-    'My big yellow cat ate the black bird',
+    'My big yellow cat ate the bird',
     'I like to read my book at school',
-    'We can go down to the store with the dog.',
+    'We can go down to the store',
     'We are going to swim at the park'
 ];
 
@@ -75,14 +75,14 @@ class Typetest extends React.Component {
             
             <div id = "maintest">
                 <h1 id="header">{g}Welcome to Typetest{l}</h1>
-                <div id="flexBox" className="middle">
+                <div id="flexBox" className="middle5">
                     <h1 id={(this.state.value===this.state.final.substring(0, this.state.value.length))? 'colorGreen':'colorRed'}>{this.state.final.substring(0, this.state.value.length)}</h1> 
                     <h1 id="colorBlack">{this.state.final.substring(this.state.value.length, this.state.final.length)}</h1>
                 </div>
                 <div id="tbb">
                     <input className="bocClass" type="text" onChange={this.handleChange}/>
                 </div>
-                <div id="header" style={{paddingLeft: '65px', color: '#7598A9'}}>
+                <div id="header2"  style={{color: 'white'}}>
                     <br />
                     <Countdown
                         date={Date.now() + 6000}
