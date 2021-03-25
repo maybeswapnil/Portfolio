@@ -1,21 +1,21 @@
 import React, {useRef} from 'react';
 import './App.css';
-import Countdown from 'react-countdown';
+import Timer from 'react-compound-timer'
 
 
 
 const sentences = [
-    'Can we go to the park',
+    'Can we go to the park.',
     'Where is the orange cat?',
-    'We can make the bird fly away',
-    'We can go down to the store',
-    'My big yellow cat ate the bird',
-    'I like to read my book at school',
-    'We are going to swim at the park',
-    'My big yellow cat ate the bird',
-    'I like to read my book at school',
-    'We can go down to the store',
-    'We are going to swim at the park'
+    'We can make the bird fly away.',
+    'We can go down to the store.',
+    'My big yellow cat ate the bird.',
+    'I like to read my book at school.',
+    'We are going to swim at the park.',
+    'My big yellow cat ate the bird.',
+    'I like to read my book at school.',
+    'We can go down to the store.',
+    'We are going to swim at the park.'
 ];
 
 const g = "<";
@@ -45,15 +45,13 @@ class Typetest extends React.Component {
       this.setState({
           value: e.target.value
       });
-      if(this.state.value===this.state.final) {
+      if(this.state.value===this.state.final.substring(0, this.state.final.length-1)) {
           this.setState({
               win: true
             });
             
         } else {
-            this.setState({
-                win: false
-            });
+           
             this.setState({
                 count: this.state.count+1
             });
@@ -69,40 +67,58 @@ class Typetest extends React.Component {
   }
 
   render() {
-    
-      return (
-        <div className="type" id="type">
-            
-            <div id = "maintest">
-                <h1 id="header">{g}Welcome to Typetest{l}</h1>
-                <div id="flexBox" className="middle5">
-                    <h1 id={(this.state.value===this.state.final.substring(0, this.state.value.length))? 'colorGreen':'colorRed'}>{this.state.final.substring(0, this.state.value.length)}</h1> 
-                    <h1 id="colorBlack">{this.state.final.substring(this.state.value.length, this.state.final.length)}</h1>
+    if(true) {
+            return (
+                <div className="type" id="type">
+                        <div id="header2"  style={{color: 'white'}}>
+                            <br />
+                            <Timer initialTime={0} startImmediately={false} timeToUpdate={1}>
+                                        {({ start, resume, pause, stop, reset, timerState }) => (
+                                            <React.Fragment>
+                                                <div>
+                                                    <Timer.Seconds /> sec
+                                                    <br />
+                                                    <Timer.Milliseconds /> ms
+                                                </div>
+                                                    {this.state.count>0 ? start(): stop}
+                                                    {this.state.win? stop() : start}
+                                               
+                                            </React.Fragment>
+                                        )}
+                            </Timer>
+                        
+                        </div>
+                  
+
+                    <div id = "maintest">
+                        <h1 id="header">{g}Welcome to Typetest{l}</h1>
+                        <div id="flexBox" className="middle5">
+                            <h1 id={(this.state.value===this.state.final.substring(0, this.state.value.length))? 'colorGreen':'colorRed'}>{this.state.final.substring(0, this.state.value.length)}</h1> 
+                            <h1 id="colorBlack">{this.state.final.substring(this.state.value.length, this.state.final.length)}</h1>
+                        </div>
+                        <div id="tbb">
+                            <input className="bocClass" type="text" onChange={this.handleChange}/>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div id="tbb">
-                    <input className="bocClass" type="text" onChange={this.handleChange}/>
-                </div>
-                <div id="header2"  style={{color: 'white'}}>
-                    <br />
-                    <Countdown
-                        date={Date.now() + 6000}
-                        intervalDelay={0}
-                        precision={3}
-                        renderer={props => <div>{props.total}</div>}
-                    />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </div>
+            ); 
+    } else {
+        return(
+            <div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h1 id="header">{g}.................Your errors {this.state.count - this.state.final.length}{l}</h1>
             </div>
-        </div>
-    ); 
+        );
+    }
   }
 
 }

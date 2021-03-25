@@ -249,8 +249,9 @@ input[type=submit] {
 }
 
 #header2 {
-  font-size: 72px;
+  font-size: 52px;
   color: #F088B0;
+  padding-left: 10vw;
 }
 
 .bocClass {
@@ -279,14 +280,24 @@ input[type=submit] {
   background-repeat: no-repeat;
 }
 
+/*for phone*/
 @media screen and (max-width: 1080px) {
-  
 
   #footer {
     font-size: 2vw;
   }
 
+  .container2 {
+      width: 75vw;
+  } 
+
   .slideshowmain {
+    display: none;
+  }
+  .pexeldes {
+    display: none;
+  }
+  .middle2 {
     display: none;
   }
 
@@ -366,13 +377,13 @@ input[type=submit] {
     font-size: 30.5px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
   }
 
   #maintest {
     font-family: 'Noto Sans', sans-serif;
     color: white;
-    font-size: 13px;
-    padding-top: 200px;  
+    font-size: 13px; 
     padding-left: 6vw;
     overflow: hidden; 
   }
@@ -391,10 +402,7 @@ input[type=submit] {
     width: 100px;
   }
 
-  #header2 {
-    color: white;
-    padding-left: 50vw;
-  }
+ 
 
   input[type="text"] {
     width: 57vw;
@@ -403,8 +411,36 @@ input[type=submit] {
 #type {
   background-image: url("backart.png");
   height: 100vh;
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
-  overflow: hidden; 
+}
+
+#header2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  color: #7598A9;
+  padding-left: 10vw;
+  position: absolute;
 }
 }
+
+#timersbutt {
+  width: ;
+}
+
+#butt {
+  color:#08233e;
+  background-color: #F087AE;
+  border-color: #F087AE;
+  border-radius: 20px;
+  font:0.5em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+  padding:14px;
+}
+
+#butt :hover {
+  
+  background-color: #7598A9;
+  border-color: #7598A9;
+}
+@media screen and (max-width: 1080px) {}
