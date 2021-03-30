@@ -4,6 +4,7 @@ import './App.css';
 
 import Slideshow from './Slideshow';
 import Pexel from './Pexel';
+import Phone from './Phone';
 
 
 
@@ -64,6 +65,7 @@ class App extends React.Component {
             <p id="secDes"></p>
           </div>
             <br id="container"/>
+          <Phone />
           <Pexel />
           <br />
           <br />

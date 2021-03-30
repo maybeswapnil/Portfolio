@@ -200,24 +200,21 @@ background: #555;
 #logo:hover {
   width: 80px;
   transition-duration: 0.5s;
-
 }
+
 #logo2 {
   width: 25px;
   transition-duration: 0.5s;
-
 }
 
 #logo2:hover {
   width: 40px;
   transition-duration: 0.5s;
-
 }
+
 #logo3 {
   width: 27px;
 }
-
-
 
 img {
   z-index: -1;

@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import Main from './Main';
 import Form from './Form';
 import { withRouter } from 'react-router-dom';
 

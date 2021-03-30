@@ -402,32 +402,34 @@ input[type=submit] {
     width: 100px;
   }
 
- 
-
   input[type="text"] {
     width: 57vw;
     font-size: 15px;
-}
-#type {
-  background-image: url("backart.png");
-  height: 100vh;
-  background-position: left;
-  background-repeat: no-repeat;
+  }
+  #type {
+    background-image: url("backart.png");
+    height: 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  #header2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    color: #7598A9;
+    padding-left: 10vw;
+    position: absolute;
+  }
+  #image {
+    display: block;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
-#header2 {
-  padding-top: 50px;
-  padding-bottom: 50px;
 
-  color: #7598A9;
-  padding-left: 10vw;
-  position: absolute;
-}
-}
-
-#timersbutt {
-  width: ;
-}
 
 #butt {
   color:#08233e;
@@ -443,4 +445,8 @@ input[type=submit] {
   background-color: #7598A9;
   border-color: #7598A9;
 }
-@media screen and (max-width: 1080px) {}
+@media only screen and (max-width: 1080px) {
+  
+}
+#image  { display:none; }
+
