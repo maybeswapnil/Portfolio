@@ -58,6 +58,11 @@ class App extends React.Component {
             <br />
             <br />
           </div>
+          <button id="github" onClick={() => window.open("https://github.com/chemotharepy")}>Github</button>
+          <br />
+          <br />
+          <br />
+          <button id="github" onClick={() => window.open("https://www.linkedin.com/in/swapnil5harma/")}>Linkedin</button>
           <div id="description">
             <p id="mainDes">Hi, my name is <span id="span">Swapnil.</span> I'm a <span>Front-End</span> Developer.</p>
             <p id="mainDes" className="work">I'm a stock photographer, freelance webdesigner, I can design cars, build and pilot fpv drones. I work as a <span id="work">Performance Tester.</span> Below are the <span>projects</span> I made and the <span>services</span> I provide.</p>
@@ -65,6 +70,7 @@ class App extends React.Component {
             <p id="secDes"></p>
           </div>
             <br id="container"/>
+            
           <Phone />
           <Pexel />
           <br />
@@ -76,8 +82,8 @@ class App extends React.Component {
           <br />
           <br />
           <div id="mot">
-              <p id="mainDes">Thanks you for going through the page.</p>
-              <p id="mainDes" className="work">It's a work in progress so check back often!</p>
+              <p id="mainDes"><span>Thank you!!</span> for going through the page. It's a <span>work in progress</span> so check back often!</p>
+              <p id="mainDes" className="work"></p>
           </div>
           <br />
           <div id="footer">

@@ -280,8 +280,24 @@ input[type=submit] {
   background-repeat: no-repeat;
 }
 
+#github {
+  display: none;
+}
+
+.totheleft {
+  display: none;
+}
+
 /*for phone*/
 @media screen and (max-width: 1080px) {
+
+  .totheleft {
+    padding-left: 50px;
+    display: block;
+  }
+  #image {
+    display: block;
+  }
 
   #footer {
     font-size: 2vw;
@@ -292,7 +308,8 @@ input[type=submit] {
   } 
 
   .slideshowmain {
-    display: none;
+    margin-top: 0px;
+    background-color: transparent;
   }
   .pexeldes {
     display: none;
@@ -329,14 +346,12 @@ input[type=submit] {
 
   .login {
     overflow: hidden; 
-    background-image: none;
-    
+    background-image: none; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     right: 60px;
     height: 100%;
     bottom: 100px;
-  
   }
 
   .bocClass {
@@ -365,13 +380,19 @@ input[type=submit] {
   }
 
   #mot {
-    display: none;
+    display: ;
+    padding-top: 10px;;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
   }
 
   .dod {
     display: none;
   }
-
+  .light {
+    display: none;
+  }
   #header {
     color: white;
     font-size: 30.5px;
@@ -421,12 +442,26 @@ input[type=submit] {
     padding-left: 10vw;
     position: absolute;
   }
-  #image {
-    display: block;
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
+
+  #github {
+    text-align: left;
+    padding-left: 20px;
+    font-size:19px;
+    display:block;
+    background-color: #363B37;
+    color: ;
+    position: absolute;
+    margin-top: 590px;
+    width: 140px;
+    height: 40px;
+    margin-left: 700px;
+    margin-left: 40px;
+    left: 10px;
+    color: white;
+    border-radius: 7px;
+    border-color: #363B37;
   }
+  
 }
 
 
@@ -445,8 +480,7 @@ input[type=submit] {
   background-color: #7598A9;
   border-color: #7598A9;
 }
-@media only screen and (max-width: 1080px) {
   
-}
 #image  { display:none; }
+
 

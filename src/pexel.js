@@ -4,7 +4,7 @@ import img1 from './../src/pexel_2.jpg';
 
 const Pexel = () => {
     return (
-        <div className="slideshowmain blackback">
+        <div className="slideshowmain blackback light">
             <div className="container2 container" id="container">
             <img src={img1} alt="Avatar" className="image2" style={{width:"100%"}} />
             <div className="middle2">
