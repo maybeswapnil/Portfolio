@@ -16,8 +16,19 @@ class Phone extends React.Component {
     }
         render() {
                     return(
-                        <div className="Phone">
-                            <img  id="image" src={"https://images.pexels.com/photos/6064637/pexels-photo-6064637.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"}/>
+                        <div ng-app="MyApp" ng-controller="AppCtrl" id="widthapp">
+                                <div class="codeheader" id="codeheader_html">HTML</div>
+                                <div id="codebox">
+                                    <pre><code data-language="html">
+                                    <p>&lt;VideoPlayer{'\n'}
+                                        ref="videoplayer"{'\n'}
+                                        preload={'{'}this.props.preload{'}\n'}
+                                        classes={'{'}this.props.classes{'}\n'}
+                                        videoID={'{'}this.props.videoID{'}\n'}
+                                        controls="controls"{'\n'}
+                                    /&gt;</p>
+                                    </code></pre>
+                                </div>
                         </div>
             );
         

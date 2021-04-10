@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import './App.css';
 
-import Slideshow from './Slideshow';
 import Pexel from './Pexel';
 import Phone from './Phone';
 
@@ -49,6 +48,8 @@ class App extends React.Component {
   render() {
       return (
         <div className="App"><br />
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
         <br />
         <br />
           <div className="classTitle" id="home">
@@ -58,11 +59,8 @@ class App extends React.Component {
             <br />
             <br />
           </div>
-          <button id="github" onClick={() => window.open("https://github.com/chemotharepy")}>Github</button>
-          <br />
-          <br />
-          <br />
-          <button id="github" onClick={() => window.open("https://www.linkedin.com/in/swapnil5harma/")}>Linkedin</button>
+          
+          <iframe src="https://ghbtns.com/github-btn.html?user=chemotharepy&type=follow&count=true&size=large" id="github" frameborder="0" scrolling="0" width="250" height="30" title="GitHub"></iframe>
           <div id="description">
             <p id="mainDes">Hi, my name is <span id="span">Swapnil.</span> I'm a <span>Front-End</span> Developer.</p>
             <p id="mainDes" className="work">I'm a stock photographer, freelance webdesigner, I can design cars, build and pilot fpv drones. I work as a <span id="work">Performance Tester.</span> Below are the <span>projects</span> I made and the <span>services</span> I provide.</p>
@@ -71,15 +69,11 @@ class App extends React.Component {
           </div>
             <br id="container"/>
             
-          <Phone />
           <Pexel />
-          <br />
-          <br />
-          <p id="mainDes" className="work dod" style={{fontSize:"50px", paddingRight:"800px"}}>Other <span>Projects</span></p>
-          <br />
-          <br />
-          <Slideshow />
-          <br />
+          
+         
+          
+          <Phone />
           <br />
           <div id="mot">
               <p id="mainDes"><span>Thank you!!</span> for going through the page. It's a <span>work in progress</span> so check back often!</p>
