@@ -74,7 +74,40 @@ class App extends React.Component {
          
           
           <Phone />
+
+          <div ng-app="MyApp" ng-controller="AppCtrl" id="widthapp">
+                                <div class="codeheader" id="codeheader_html">Things Used</div>
+                                <div id="codebox">
+                                    <pre><code data-language="html">
+                                    <p>&lt;React.js /&gt;
+                                      <br />
+                                    &lt;Spring Rest /&gt;
+                                    <br />
+                                    &lt;Spring JPA DATA /&gt;
+                                    <br />
+                                    &lt;Took around 1 week to build, pushed some updates on weekends. /&gt;
+                                    <br />
+                                    &lt;<a style={{color: 'white'}} href = "https://open.spotify.com/playlist/35579dVKvh2Cue5lyXAJso">My Spotify Playlist</a> to calm my head. /&gt;
+                                    </p>
+                                    </code></pre>
+                                </div>
+                        </div>
+                        <div ng-app="MyApp" ng-controller="AppCtrl" id="widthapp">
+                                <div class="codeheader" id="codeheader_html">Things I do as a Performance Tester</div>
+                                <div id="codebox">
+                                    <pre><code data-language="html">
+                                    <p>&lt;Made and managed portals (React.js) to provide server logs in readable format. /&gt;
+                                      <br />
+                                    &lt;Made VuGen Scripts to replicate scenario. /&gt;
+                                    <br />
+                                    &lt;Worked with different middleware services, REST API and softwares like Vugen, Jmeter and Grafana. /&gt;
+                                    <br />
+                                    </p>
+                                    </code></pre>
+                                </div>
+                        </div>
           <br />
+          
           <div id="mot">
               <p id="mainDes"><span>Thank you!!</span> for going through the page. It's a <span>work in progress</span> so check back often!</p>
               <p id="mainDes" className="work"></p>
