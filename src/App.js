@@ -79,7 +79,7 @@ class App extends React.Component {
                                 <div class="codeheader" id="codeheader_html">Things Used</div>
                                 <div id="codebox">
                                     <pre><code data-language="html">
-                                    <p>&lt;React.js /&gt;
+                                    <div id="widthofp">&lt;React.js /&gt;
                                       <br />
                                     &lt;Spring Rest /&gt;
                                     <br />
@@ -88,7 +88,7 @@ class App extends React.Component {
                                     &lt;Took around 1 week to build, pushed some updates on weekends. /&gt;
                                     <br />
                                     &lt;<a style={{color: 'white'}} href = "https://open.spotify.com/playlist/35579dVKvh2Cue5lyXAJso">My Spotify Playlist</a> to calm my head. /&gt;
-                                    </p>
+                                    </div>
                                     </code></pre>
                                 </div>
                         </div>
@@ -109,8 +109,8 @@ class App extends React.Component {
           <br />
           
           <div id="mot">
-              <p id="mainDes"><span>Thank you!!</span> for going through the page. It's a <span>work in progress</span> so check back often!</p>
-              <p id="mainDes" className="work"></p>
+              <p id="mainDes2"><span>Thank you!!</span> for going through the page. It's a <span>work in progress</span> so check back often!</p>
+              <p id="mainDes2" className="work"></p>
           </div>
           <br />
           <div id="footer">

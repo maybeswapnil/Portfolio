@@ -306,6 +306,8 @@ input[type=submit] {
 #image  { display:none; }
 
 
+
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
 #codebox {
@@ -363,6 +365,10 @@ code {
 
 /*for phone*/
 @media screen and (max-width: 1080px) {
+
+  #widthofp {
+    max-width: 300px;
+  }
 
   #widthapp {
     padding-top: 0px;
