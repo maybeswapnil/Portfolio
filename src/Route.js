@@ -4,6 +4,8 @@ import App from './App';
 import Contact from './Contact';
 import Employee from './Employee';
 import Typetest from './Typetest';
+import Crow from './Crow';
+
 import RedirectPage from './RedirectPage';
 
 import logo from './../src/git.png';
@@ -38,8 +40,9 @@ import {
                   <Link to='/typetest'>
                       <li><a className="nav-link nav-link1">TYPETEST</a></li>
                   </Link>
-                  <Link to='/contact'>
-                      <li><a className="nav-link nav-link1">CONTACT</a></li>
+                  
+                  <Link to='/c-row'>
+                      <li><a className="nav-link nav-link1">C-ROW</a></li>
                   </Link>
                 </ul>
                 <ul className="rightNav">
@@ -52,15 +55,16 @@ import {
             <Route path="/employee">
               <Employee />
             </Route>
+            <Route path="/c-row">
+              <Crow />
+            </Route>
             <Route path="/tictactoe">
               <RedirectPage />
             </Route>
             <Route path="/typetest" >
               <Typetest />
             </Route> 
-            <Route path="/contact" >
-              <Contact />
-            </Route> 
+           
             <Route path="/" component={App} />
              
           </Switch>
