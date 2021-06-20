@@ -4,6 +4,8 @@ import App from './App';
 import Contact from './Contact';
 import Employee from './Employee';
 import Typetest from './Typetest';
+import RedirectPage from './RedirectPage';
+
 import logo from './../src/git.png';
 import logo2 from './../src/linkLogo.png';
 
@@ -30,8 +32,8 @@ import {
                   <Link to='/'>
                       <li><a className="nav-link nav-link1" href="#home">HOME</a></li>
                   </Link>
-                  <Link to='/'>
-                      <li><a className="nav-link nav-link1" href="#description">ABOUT</a></li>
+                  <Link to='/tictactoe'>
+                      <li><a className="nav-link nav-link1" href="#description">TICTACTOE</a></li>
                   </Link>
                   <Link to='/typetest'>
                       <li><a className="nav-link nav-link1">TYPETEST</a></li>
@@ -49,6 +51,9 @@ import {
           <Switch>
             <Route path="/employee">
               <Employee />
+            </Route>
+            <Route path="/tictactoe">
+              <RedirectPage />
             </Route>
             <Route path="/typetest" >
               <Typetest />
