@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import './App.css';
-
+import resume from './resume.pdf';
 import Pexel from './Pexel';
 import Phone from './Phone';
 
@@ -61,7 +61,7 @@ class App extends React.Component {
           </div>
           
           <iframe src="https://ghbtns.com/github-btn.html?user=chemotharepy&type=follow&count=true&size=large" id="github" frameborder="0" scrolling="0" width="250" height="30" title="GitHub"></iframe>
-          <a href={require("./resume.pdf")} download="resume">
+          <a href={resume} download="resume.pdf">
             <button id="resume" frameborder="0" scrolling="0" width="250" height="30" title="Download" ><img src="https://img.icons8.com/material-outlined/16/000000/desktop-download.png"/> Download Resume</button>
             </a>
 
