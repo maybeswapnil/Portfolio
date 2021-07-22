@@ -283,6 +283,9 @@ input[type=submit] {
 #github {
   display: none;
 }
+#resume {
+  display: none;
+}
 
 .totheleft {
   display: none;
