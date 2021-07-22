@@ -362,10 +362,18 @@ code {
 #codeheader_js {
   background-color: #0074D9;
 }
+#widthapp {
+  display: none;
+}
 
 /*for phone*/
 @media screen and (max-width: 1080px) {
-
+  #widthapp {
+    display: block;
+  }
+  #mainDes {
+    display: none;
+  }
   #widthofp {
     max-width: 300px;
   }
@@ -411,7 +419,7 @@ code {
   }
 
   .classTitle h1 {
-    font-size: 24vw;
+    font-size: 17vw;
   }
   .classTitle h2 {
     font-size: 23vw;
@@ -541,6 +549,22 @@ code {
     height: 40px;
     margin-left: 700px;
     margin-left: 10px;
+    left: 10px;
+    
+  }
+
+  #resume {
+    text-align: left;
+    
+    font-size:19px;
+    display:block;
+    border-radius: 7px;
+    position: absolute;
+    margin-top: 640px;
+    width: 212px;
+    height: 30px;
+    margin-left: 700px;
+    margin-left: 30px;
     left: 10px;
     
   }

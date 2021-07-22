@@ -53,15 +53,20 @@ class App extends React.Component {
         <br />
         <br />
           <div className="classTitle" id="home">
-            <h1 id="title">chemo</h1>
-            <h2 id="title">Hello!...</h2>
+            <h1 id="title">Sharma</h1>
+            <h2 id="title">Swapnil</h2>
             <br />
             <br />
             <br />
           </div>
           
           <iframe src="https://ghbtns.com/github-btn.html?user=chemotharepy&type=follow&count=true&size=large" id="github" frameborder="0" scrolling="0" width="250" height="30" title="GitHub"></iframe>
+          <a href={require("./resume.pdf")} download="resume">
+            <button id="resume" frameborder="0" scrolling="0" width="250" height="30" title="Download" ><img src="https://img.icons8.com/material-outlined/16/000000/desktop-download.png"/> Download Resume</button>
+            </a>
+
           <div id="description">
+          <Phone />
             <p id="mainDes">Hi, my name is <span id="span">Swapnil.</span> I'm a <span>Front-End</span> Developer.</p>
             <p id="mainDes" className="work">I'm a stock photographer, freelance webdesigner, I can design cars, build and pilot fpv drones. I work as a <span id="work">Performance Tester.</span> Below are the <span>projects</span> I made and the <span>services</span> I provide.</p>
             <br />
@@ -70,11 +75,7 @@ class App extends React.Component {
             <br id="container"/>
             
           <Pexel />
-          
-         
         
-
-          
           <br />
           
          
